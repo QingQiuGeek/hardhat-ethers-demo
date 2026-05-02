@@ -1,9 +1,10 @@
-import { buildModule } from "@nomicfoundation/hardhat-ignition/modules";
+import { buildModule } from '@nomicfoundation/hardhat-ignition/modules';
 
-export default buildModule("CounterModule", (m) => {
-  const counter = m.contract("Counter");
+// 调用已部署的 Counter 合约。
+export default buildModule('CounterModule', (m) => {
+	const counter = m.contract('Counter');
 
-  m.call(counter, "incBy", [5n]);
+	m.call(counter, 'incBy', [5n]);
 
-  return { counter };
+	return { counter };
 });

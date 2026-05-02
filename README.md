@@ -20,6 +20,10 @@ This example project includes:
 To run all the tests in the project, execute the following command:
 
 ```shell
+npm install
+```
+
+```shell
 npx hardhat test
 ```
 
@@ -56,9 +60,8 @@ After setting the variable, you can run the deployment with the Sepolia network:
 npx hardhat ignition deploy --network sepolia ignition/modules/Counter.ts
 ```
 
-
-
 ### Run Demo
+
 ## Deploying to a local chain
 
 npx hardhat run scripts/demo.ts --network localhost
